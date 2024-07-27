@@ -55,7 +55,7 @@
     <a href="#sobre" onclick="openMenu(false)">O que Fazemos</a><br>
     <a href="#resultados" onclick="openMenu(false)">Resultados</a><br>
     <a href="#nos" onclick="openMenu(false)">Quem Somos</a><br>
-    <a onclick="openMenu(false)" href="https://johnvitor.com" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</a><br>
+    <span onclick="openMenu(false)" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</span><br>
   </p>
 </div>
 
@@ -66,7 +66,7 @@
       <a href="#sobre" class="componente" style="margin-right: 2.2%">O que Fazemos</a>
       <a href="#resultados" class="componente" style="margin-right: 2.2%" >Resultados</a>
       <a href="#nos" class="componente" style="margin-right: 2.2%" >Quem Somos</a>
-      <a class="componente" style="margin-right: 0%" >
+      <a class="componente" href="javascript:setTimeout(function (){window.open('http://google.com')},1000)" style="margin-right: 0%" >
         <span class="gradientButton" onclick="passOver()">
         Vamos Conversar
         </span>
@@ -110,10 +110,10 @@
       </span>
       <span style="font-size: 280%; position: relative;z-index: 3;display: inline-block" class="cand gradText hidden">CONVERSE COM <keep>A GENTE</keep></span>
       <span style="z-index: 3;position: relative;font-size: 80%;margin-top: 10%;display: inline-block" class="font2"><br>
-        <span class="hidden fontInc1" style="cursor: pointer; padding: 20px" onmouseover="shiver(true)" onmouseleave="shiver(false)" onclick="shiver(false,true, this); passOver()">
+        <a class="hidden fontInc1" style="cursor: pointer; padding: 20px" onmouseover="shiver(true)" onmouseleave="shiver(false)" onclick="shiver(false,true, this); passOver()" href="javascript:setTimeout(function (){window.open('http://google.com')},1000)">
           ENTRE EM CONTATO
           <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right error1" style="position: absolute; bottom: 0; top: 15%; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
-        </span>
+        </a>
       </span>
     </p>
   </div>
@@ -196,10 +196,10 @@
   <div id="nos" style="width: 60%;margin-left: 20%;position: relative;margin-top: 10%;margin-bottom: 10%; display: inline-block;">
     <img src="img/logo.png" style="width: 50%;margin-left: 25%" class="hidden img2">
     <span style="text-align: center;width: 100%;;z-index: 3;position: relative;font-size: 100%;margin-top: 0%;display: inline-block" class="font2"><br>
-      <span class="hidden fontInc1" style="display: inline-block;cursor: pointer; padding: 20px">
+      <a class="hidden fontInc1" style="display: inline-block;cursor: pointer; padding: 20px" href="http://google.com">
         ENTRE EM CONTATO
         <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right" style="position: absolute; bottom: 0; top: 0; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
-      </span>
+      </a>
         <br>
         <span style="text-align: left; display: inline-block;margin-top: 3%" class="fontInc1">
         <i class="fa-brands fa-whatsapp" style="font-size: 300%;margin-right: 8%; transform: translateY(20%)"></i> +19 988760900
@@ -214,13 +214,13 @@
 </div>
 
 <footer style="background: white;padding-bottom: 87px;padding-top: 47px; margin-top: -1px;text-align: center">
-  <p style="float: left;width: 100%; color: var(--stealth1);font-weight: 700;letter-spacing: 4px; text-align: center; cursor: default;"  class="footerSmall syne pcbye"><span style="padding-right: 10px; padding-left: 10px; cursor: pointer;font-size: 130%" onclick="window.open('https://johnvitor.com')">WEBSITE BY JOHN VITOR</span></span></p>
+  <p style="float: left;width: 100%; color: var(--stealth1);font-weight: 700;letter-spacing: 4px; text-align: center; cursor: default;"  class="footerSmall syne pcbye"><a style="padding-right: 10px; padding-left: 10px; cursor: pointer;font-size: 130%" target="_blank" href="https://johnvitor.com">WEBSITE BY JOHN VITOR</a></span></p>
 
   <p style="float: left; text-align: left; width: 28%; margin-left: 4%; cursor: default; color: var(--stealth1)" class="footerSmall footerThings txtt">© 2024 • MEDIALAUNCH.COM.BR<br>Rio Claro - SP
     <br>+19 988760900<br>contato@medialaunch.com.br</span></p>
   <a style="float: left; text-align: center; width: 36%; color: var(--stealth1)"  class="footerSmall footerTerms footerThings" href=".">TERMOS E CONDIÇÕES <span class="phonebye">ㅤ</span> POLITICAS DE PRIVACIDADE</span>
   <br><br>CATÁLOGO</a>
-  <p style="float: left; text-align: right; width: 24%; color: var(--stealth1);font-weight: 700;letter-spacing: 4px; cursor: default;" class="footerSmall syne phonebye txtt"><span style="padding-right: 10px; padding-left: 10px; cursor: pointer;" onclick="window.open('https://johnvitor.com')">WEBSITE BY JOHN VITOR</span></span></p>
+  <p style="float: left; text-align: right; width: 24%; color: var(--stealth1);font-weight: 700;letter-spacing: 4px; cursor: default;" class="footerSmall syne phonebye txtt"><a style="padding-right: 10px; padding-left: 10px; cursor: pointer;" target="_blank" href="https://johnvitor.com">WEBSITE BY JOHN VITOR</a></span></p>
 </footer>
 </body>
 <script src="main.js"></script>

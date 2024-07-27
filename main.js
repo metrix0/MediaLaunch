@@ -69,7 +69,7 @@ function passOver(){
     const cont = document.getElementById('passOver')
     cont.classList.remove('none')
     cont.style.left = '0%'
-    setTimeout(function (){window.open('a')},1000)
+    // setTimeout(function (){window.open('a')},1000)
     setTimeout(function (){
         cont.style.left = '200%'
         document.getElementById('arrows').innerHTML = '<i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -3%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n' +
@@ -135,3 +135,5 @@ function openMenu(op){
         setTimeout(function (){cfg.classList.add('none')},800)
     }
 }
+
+
