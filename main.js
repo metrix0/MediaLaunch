@@ -1,3 +1,9 @@
+
+if (window.innerWidth > 600) {
+    document.getElementById('video').src = 'img/VideoMed.mp4'
+} else {
+    document.getElementById('video').src = 'img/VideoMedCompressed.mp4'
+}
 function Welcome(){
 
     let time = 1
@@ -75,19 +81,19 @@ function passOver(){
 const testimonials = [
     {
         "name":"Cowbrownies",
-        "imgpath":"cowbrownies.png",
+        "imgpath":"cowbrownies.jpg",
         "result":"+1000 VENDAS/MÊS",
         "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
     },
     {
         "name":"John Vitor",
-        "imgpath":"johnvitor.png",
+        "imgpath":"johnvitor.jpg",
         "result":"+R$ 5.000/MÊS FATURAMENTO",
         "desc": "Entregamos um visual profissional que atrai o tipo certo de cliente."
     },
     {
         "name":"Baliero",
-        "imgpath":"baliero.png",
+        "imgpath":"baliero.jpg",
         "result":"+ RENOME E TRÁFEGO",
         "desc": "Combinamos nossa criatividade com suas fotos incríveis."
     },
