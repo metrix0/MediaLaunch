@@ -8,6 +8,7 @@
     --select2: rgba(209, 209, 213, 1);
     --red: #dc2d28;
     --green: #60be7c;
+    --normalBG: white;
 }
 :root{
     --main: black;
@@ -15,7 +16,7 @@
     --grad2:#e94057;
     --grad3:#f27121;
 }
-html, body {;transition: 0.2s;scroll-behavior: smooth;overflow-x: hidden;background-color: #f0ece9; color: var(--txt); font-family: 'Poppins', sans-serif; margin: 0; z-index: -1;}
+html, body {;transition: 0.2s;scroll-behavior: smooth;overflow-x: hidden;background-color: var(--normalBG); color: var(--txt); font-family: 'Poppins', sans-serif; margin: 0; z-index: -1;}
 ::-webkit-scrollbar-thumb {background-color: var(--main)}
 ::-webkit-scrollbar-thumb:hover {background-color: var(--main);}
 ::-webkit-scrollbar {width: 3px;height: 0px;background: transparent;}
@@ -188,6 +189,8 @@ a{all: unset; cursor: pointer;}
     .cont3{height: 40svh!important;}
     .vimeo{scale: 100% !important; margin-top: -14% !important; width: 160% !important; margin-left: -30% !important; height: auto!important;}
     .vid1{margin-top: 0% !important}
+    .error1{top: 10% !important;}
+
 
 }
 
