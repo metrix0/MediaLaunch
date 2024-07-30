@@ -116,7 +116,7 @@ function testimoialsInsert(){
             '            '+testimonials[i].desc+'' +
             '          </span>' +
             '          <br>' +
-            '          <span style="font-size: 60%;margin-top: 5%;display: inline-block;cursor: pointer;" onclick="window.open(\'wpp\')">' +
+            '          <span style="font-size: 60%;margin-top: 5%;display: inline-block;cursor: pointer;" onclick="window.open(\'https://wa.me/5519988760900?text=Ol%C3%A1,%20vim%20pelo%20site.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es,%20n%C3%BAmeros%20e%20m%C3%A9tricas%20sobre%20o%20projeto '+testimonials[i].name+'?\')">' +
             '            Saiba mais' +
             '          </span>' +
             '        </p>'
