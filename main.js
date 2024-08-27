@@ -82,7 +82,7 @@ const testimonials = [
     {
         "name":"Cowbrownies",
         "imgpath":"cowbrownies.jpg",
-        "result":"+1000 VENDAS/MÊS",
+        "result":"120% VENDAS/MÊS",
         "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
     },
     {
