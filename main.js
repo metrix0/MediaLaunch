@@ -80,22 +80,58 @@ function passOver(){
 
 const testimonials = [
     {
-        "name":"Cowbrownies",
-        "imgpath":"cowbrownies.jpg",
-        "result":"120% VENDAS/MÊS",
-        "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
+        "name":"Orc",
+        "imgpath":"orc.jpg",
+        "result":"+146 LEADS EM 1 MÊS",
+        "desc": "Lançamento de novos produtos com sucesso."
     },
     {
-        "name":"John Vitor",
-        "imgpath":"johnvitor.jpg",
-        "result":"+R$ 5.000/MÊS FATURAMENTO",
-        "desc": "Entregamos um visual profissional que atrai o tipo certo de cliente."
+        "name":"Total Ar",
+        "imgpath":"totalar.jpg",
+        "result":"+ RECONHECIMENTO",
+        "desc": "Com a TotalAr alcançamos mais consumidores e empreendimentos!"
+    },
+    {
+        "name":"Germânia",
+        "imgpath":"germania.jpg",
+        "result":"+ RECONHECIMENTO",
+        "desc": "A Germânia de Rio Claro precisava de mais alcance."
+    },
+    {
+        "name":"Cowbrownies",
+        "imgpath":"cowbrownies.jpg",
+        "result":"+ VENDAS/MÊS",
+        "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
+    },
+    // {
+    //     "name":"Metal Móveis",
+    //     "imgpath":"metal.png",
+    //     "result":"+1000 VENDAS/MÊS",
+    //     "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
+    // },
+    {
+        "name":"Casulo Veste",
+        "imgpath":"casulo.jpg",
+        "result":"LANÇAMENTO DO ZERO",
+        "desc": "Lançamento da Loja com múltiplos clientes ativos!"
     },
     {
         "name":"Baliero",
         "imgpath":"baliero.jpg",
         "result":"+ RENOME E TRÁFEGO",
         "desc": "Combinamos nossa criatividade com suas fotos incríveis."
+    },
+    {
+        "name":"Lugs",
+        "imgpath":"lugs.jpg",
+        "result":"+ RECONHECIMENTO",
+        "desc": "A Lug's precisava de reconhecimento, através da internet e influencers!"
+    },
+    {
+        "name":"John Vitor",
+        "imgpath":"johnvitor.jpg",
+        "result":"LEADS QUALIFICADOS",
+        "desc": "Entregamos um visual profissional que atrai o tipo certo de cliente."
     },
 ]
 const testimonialsUl = document.getElementById('testimoinalGrid')
