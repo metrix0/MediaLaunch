@@ -65,17 +65,30 @@ function shiver(bool, click, el) {
     }
 }
 
+var passedOver = false
 function passOver(){
+    passedOver = false
     const cont = document.getElementById('passOver')
-    cont.classList.remove('none')
-    cont.style.left = '0%'
-    // setTimeout(function (){window.open('a')},1000)
+    cont.classList.remove('none_important')
     setTimeout(function (){
-        cont.style.left = '200%'
-        document.getElementById('arrows').innerHTML = '<i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -3%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n' +
-            '        <i class="fa-solid fa-arrow-right flying" style="top: -20%;right: 0; font-size: 350%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n' +
-            '        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 2s;left: 60%;bottom: 5%;font-size: 550%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n'
-    },2000)
+
+        cont.style.left = '0%'
+
+        setTimeout(function (){passedOver = true;},400)
+
+        setTimeout(function (){
+            cont.style.left = '200%'
+            document.getElementById('arrows').innerHTML = '<i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -3%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n' +
+                '        <i class="fa-solid fa-arrow-right flying" style="top: -20%;right: 0; font-size: 350%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n' +
+                '        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 2s;left: 60%;bottom: 5%;font-size: 550%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>\n'
+            setTimeout(function (){
+                cont.classList.add('none_important')
+                setTimeout(function (){            cont.style.left = '-100%';
+                },10)
+            },1000)
+        },1000)
+
+    },10)
 }
 
 const testimonials = [
@@ -173,3 +186,49 @@ function openMenu(op){
 }
 
 
+
+
+
+
+var form = document.getElementById("form");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    if(document.getElementById("telInput").value !== ""){
+        shiver(false,true, document.getElementById("formbutton")); passOver()
+        // var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Agradecemos o Envio!";
+                form.reset();
+                function iterate(){
+                    if(passedOver){window.location = "../contato-recebido"}
+                    else setTimeout(function (){iterate()},200)
+                }
+                iterate()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Opa! Houve algum problema ao enviar o número."
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Opa! Houve algum problema ao enviar o número."
+        });
+    }
+
+
+}
+
+
+form.addEventListener("submit", handleSubmit)

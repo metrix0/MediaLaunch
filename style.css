@@ -33,6 +33,7 @@ input{all: unset}
 /* FIXED COMPONENTS */
 
 .none{display: none}
+.none_important{display: none!important;}
 .phonebye{display: inline-block}
 .phonebye2{display: block}
 .pcbye{display: none}
@@ -56,6 +57,10 @@ a{all: unset; cursor: pointer;}
     transform: translateX(100vw);
 
 }
+button{all: unset}
+
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -270,3 +275,5 @@ a{all: unset; cursor: pointer;}
     }
 
 }
+
+

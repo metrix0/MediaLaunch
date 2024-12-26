@@ -18,7 +18,6 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "nchz4sig95");
   </script>
-<!--  <script src="https://player.vimeo.com/api/player.js"></script>-->
   <title>Social Media, aumentamos seu lucro | MediaLaunch</title>
   <meta property="og:site_name" content="Social Media, aumentamos seu lucro | MediaLaunch">
   <meta property="og:site-name" content="Social Media, aumentamos seu lucro | MediaLaunch">
@@ -55,7 +54,8 @@
     <a href="#sobre" onclick="openMenu(false)">O que Fazemos</a><br>
     <a href="#resultados" onclick="openMenu(false)">Resultados</a><br>
     <a href="#nos" onclick="openMenu(false)">Quem Somos</a><br>
-    <span onclick="openMenu(false)" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</span><br>
+    <span onclick="window.location('#contato'); openMenu(false)" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</span><br>
+  </p>
   </p>
 </div>
 
@@ -66,8 +66,8 @@
       <a href="#sobre" class="componente" style="margin-right: 2.2%">O que Fazemos</a>
       <a href="#resultados" class="componente" style="margin-right: 2.2%" >Resultados</a>
       <a href="#nos" class="componente" style="margin-right: 2.2%" >Quem Somos</a>
-      <a class="componente" href="https://wa.me/5519988760900?text=Ol%C3%A1,%20vim%20pelo%20site%20da%20MediaLaunch." target="_blank" style="margin-right: 0%" >
-        <span class="gradientButton" onclick="passOver()">
+      <a class="componente" href="#contato"  style="margin-right: 0%" >
+        <span class="gradientButton">
         Vamos Conversar
         </span>
       </a>
@@ -83,11 +83,6 @@
     </div>
   </div>
   <div class="cont3" style="margin-top: 0%; background-color: white; display: inline-block;width: 100%; height: 93svh">
-    <!--    <div class="vimeo" style="width: 100%; height: 90%; margin-top: -10%; overflow: hidden ; padding-bottom: 10%; position: relative; z-index: 0">-->
-    <!--      <div style="padding:56.25% 0 0 0;position:relative;">-->
-    <!--        <iframe src="https://player.vimeo.com/video/990958850?badge=0&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Comp 1_33"></iframe>-->
-    <!--      </div>-->
-    <!--    </div>-->
     <div class="vid1" style="width: 100%; height: 100%;background: white; margin-top: -5%; overflow: hidden ; padding-bottom: 10%; position: relative; z-index: 0">
       <video id="video" src="" style="width: 100%" muted autoplay playsinline loop></video>
     </div>
@@ -98,11 +93,12 @@
   </div>
 </div>
 <div class="phoneFit cont1" style="height: 105svh">
-  <div id="passOver" class="none" style="transition: 1.5s;width: 100%; height: 100%; position: fixed; left: -100%; top: 0;display: inline-block;    background: linear-gradient(90deg, var(--grad1) 0%, var(--grad2) 50%, var(--grad3) 100%);; z-index: 99">
+  <div id="passOver" class="none_important" style="transition: .5s;width: 100%; height: 100%; position: fixed; left: -100%; top: 0;display: inline-block;    background: linear-gradient(90deg, var(--grad1) 0%, var(--grad2) 50%, var(--grad3) 100%);; z-index: 99">
 
   </div>
-  <div style="height: 100%; display: flex;align-items: center; width: 100%; justify-content: center">
-    <p class="phone90" style="margin-left: 0!important;width: 40%;margin-top: -7%; text-align: center; position: relative">
+  <div id="contato" style="height: 100%; display: flex;align-items: center; width: 100%; justify-content: center">
+
+    <form id="form" action="https://formspree.io/f/mgvvvklv" method="POST" class="phone90" style="margin-left: 0!important;width: 40%;margin-top: -7%; text-align: center; position: relative">
       <span id="arrows">
         <i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -3%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
         <i class="fa-solid fa-arrow-right flying" style="top: -20%;right: 0; font-size: 350%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
@@ -110,12 +106,16 @@
       </span>
       <span style="font-size: 280%; position: relative;z-index: 3;display: inline-block" class="cand gradText hidden">CONVERSE COM <keep>A GENTE</keep></span>
       <span style="z-index: 3;position: relative;font-size: 80%;margin-top: 10%;display: inline-block" class="font2"><br>
-        <a class="hidden fontInc1" style="cursor: pointer; padding: 20px" onmouseover="shiver(true)" onmouseleave="shiver(false)" onclick="shiver(false,true, this); passOver()" href="https://wa.me/5519988760900?text=Ol%C3%A1,%20vim%20pelo%20site%20da%20MediaLaunch." target="_blank">
-          ENTRE EM CONTATO
-          <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right error1" style="position: absolute; bottom: 0; top: 15%; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
-        </a>
+         <span class="hidden fontInc1" style="width: 130%; display: inline-block; margin-left: -10%"><b>SEU TELEFONE:</b> <input id="telInput" name="tel" type="tel" autocomplete="tel" placeholder="(__) ____-____" style=";font-size: 120%; text-align: left; margin-left: 2%"></span>
+          <br>
+          <button id="formbutton" type="submit" class="hidden fontInc1" style="margin-top: 5px;display: inline-block;cursor: pointer; padding: 20px" onmouseover="shiver(true)" onmouseleave="shiver(false)" target="_blank">
+            SOLICITAR CONTATO
+            <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right error1" style="position: absolute; bottom: 0; top: 15%; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
+          </button>
+
+
       </span>
-    </p>
+    </form>
   </div>
 </div>
 <div id="sobre" class="phoneFit cont2" style="display: inline-block;position: relative;height: 110svh; background: linear-gradient(-150deg, var(--grad1) 0%, var(--grad2) 40%, var(--grad2) 60%, var(--grad3) 100%)">
@@ -135,12 +135,6 @@
       <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-video"></i> CAPTAÇÃO DE CONTEÚDO</span>
       <br>
       <span style="font-size: 90%; display: inline-block" class="hidden">DIREÇÃO CRIATIVA, FOTÓGRAFO, CINEASTA</span>
-<!--      <br><br><br>
-      <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-user"></i> TRÁFEGO PAGO</span>
-      <br>
-      <span style="font-size: 90%; display: inline-block" class="hidden">CERTIFICADOS PELO GOOGLE ADS <i class="fa-brands fa-google"></i><br>
-        CERTIFICADOS PELO META ADS <i class="fa-brands fa-meta"></i> <span style="font-size: 75%">INSTAGRAM/FACEBOOK</span>
-      </span>-->
       <br><br><br>
       <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-rocket"></i> RESULTADOS</span>
       <br>
@@ -174,30 +168,12 @@
       <div style="text-align: center; margin-top: 30%">
         <i class="fa-solid fa-circle-notch spin" style="font-size: 300%;color: var(--grad2)"></i>
       </div>
-     <!-- <div class="gridElement">
-        <img src="img/img2.png" style="width: 100%; border-radius: 4px">
-        <p style="margin-top: 3%; text-align: center">
-          <span class="cand">
-            RESULTADO
-          </span>
-          <br>
-          <span style="font-size: 85%">
-            ASIDO AJSID ASIODASMIODASMIOASDMIAS
-          </span>
-        </p>
-      </div>
-      <div style="display: inline-grid; background-color: black; height: 100px">
-
-      </div>
-      <div style="display: inline-grid; background-color: black; height: 100px">
-
-      </div>-->
     </div>
   </div>
   <div id="nos" style="width: 60%;margin-left: 20%;position: relative;margin-top: 10%;margin-bottom: 10%; display: inline-block;">
     <img src="img/logo.png" style="width: 50%;margin-left: 25%" class="hidden img2">
     <span style="text-align: center;width: 100%;;z-index: 3;position: relative;font-size: 100%;margin-top: 0%;display: inline-block" class="font2"><br>
-      <a class="hidden fontInc1" style="display: inline-block;cursor: pointer; padding: 20px" href="https://wa.me/5519988760900?text=Ol%C3%A1,%20vim%20pelo%20site%20da%20MediaLaunch." target="_blank">
+      <a class="hidden fontInc1" style="display: inline-block;cursor: pointer; padding: 20px" href="#contato" target="_blank">
         ENTRE EM CONTATO
         <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right" style="position: absolute; bottom: 0; top: 0; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
       </a>
