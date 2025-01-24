@@ -197,34 +197,19 @@ async function handleSubmit(event) {
     if(document.getElementById("telInput").value !== ""){
         shiver(false,true, document.getElementById("formbutton")); passOver()
         // var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                status.innerHTML = "Agradecemos o Envio!";
+        SetTimeout(function(){
+            status.innerHTML = "Agradecemos o Envio!";
                 form.reset();
                 function iterate(){
                     if(passedOver){window.location = "../contato-recebido"}
                     else setTimeout(function (){iterate()},200)
                 }
                 iterate()
-            } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                        status.innerHTML = "Opa! Houve algum problema ao enviar o número."
-                    }
-                })
-            }
-        }).catch(error => {
-            status.innerHTML = "Opa! Houve algum problema ao enviar o número."
-        });
+        }
+        else {
+                status.innerHTML = "Opa! Houve algum problema ao enviar o número."
+             }
+        },250);
     }
 
 
