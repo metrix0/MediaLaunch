@@ -192,9 +192,27 @@ function openMenu(op){
 
 var form = document.getElementById("form");
 
-async function handleSubmit(event) {
-    window.location = "../contato-recebido"
-}
 
+const handleSubmit = event => {
+    event.preventDefault();
 
-form.addEventListener("submit", handleSubmit)
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    })
+        .then(() => function (){
+            form.reset();
+            function iterate(){
+                if(passedOver){window.location = "../contato-recebido"}
+                else setTimeout(function (){iterate()},200)
+            }
+            iterate()
+        })
+        .catch(error => alert("Opa! Houve algum problema ao enviar o número."));
+};
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
