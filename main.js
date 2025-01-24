@@ -204,7 +204,7 @@ const handleSubmit = event => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
     })
-        .then(() => window.location = "../contato-recebido")
+        .then(() => setTimeout(window.location = "../contato-recebido",150))
         .catch(error => alert("Opa! Houve algum problema ao enviar o número."));
 };
 
