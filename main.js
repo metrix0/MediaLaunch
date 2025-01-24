@@ -194,6 +194,7 @@ var form = document.getElementById("form");
 
 async function handleSubmit(event) {
     event.preventDefault();
+    console.log("a");
     if(document.getElementById("telInput").value !== ""){
         shiver(false,true, document.getElementById("formbutton")); passOver()
         // var status = document.getElementById("my-form-status");
