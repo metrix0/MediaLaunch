@@ -206,16 +206,7 @@ const handleSubmit = event => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
     })
-        .then(() => function (){
-            console.log("then")
-            form.reset();
-            function iterate(){
-                console.log("itarated")
-                if(passedOver){window.location = "../contato-recebido"}
-                else setTimeout(function (){iterate()},200)
-            }
-            iterate()
-        })
+        .then(() => console.log("yay"))
         .catch(error => alert("Opa! Houve algum problema ao enviar o número."));
 };
 
