@@ -207,6 +207,7 @@ const handleSubmit = event => {
         body: new URLSearchParams(formData).toString()
     })
         .then(() => function (){
+            console.log("then")
             form.reset();
             function iterate(){
                 console.log("itarated")
