@@ -199,6 +199,8 @@ const handleSubmit = event => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
+    console.log("fetching")
+    
     fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -207,6 +209,7 @@ const handleSubmit = event => {
         .then(() => function (){
             form.reset();
             function iterate(){
+                console.log("itarated")
                 if(passedOver){window.location = "../contato-recebido"}
                 else setTimeout(function (){iterate()},200)
             }
