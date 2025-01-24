@@ -193,27 +193,7 @@ function openMenu(op){
 var form = document.getElementById("form");
 
 async function handleSubmit(event) {
-    event.preventDefault();
-    console.log("a");
-    if(document.getElementById("telInput").value !== ""){
-        shiver(false,true, document.getElementById("formbutton")); passOver()
-        // var status = document.getElementById("my-form-status");
-        SetTimeout(function(){
-            status.innerHTML = "Agradecemos o Envio!";
-                form.reset();
-                function iterate(){
-                    if(passedOver){window.location = "../contato-recebido"}
-                    else setTimeout(function (){iterate()},200)
-                }
-                iterate()
-        }
-        else {
-                status.innerHTML = "Opa! Houve algum problema ao enviar o número."
-             }
-        },250);
-    }
-
-
+    window.location = "../contato-recebido"}
 }
 
 
