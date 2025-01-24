@@ -199,24 +199,14 @@ const handleSubmit = event => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-    console.log("fetching")
-
     fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
     })
-        .then(() => {
-            console.log("then")
-            form.reset();
-            function iterate(){
-                console.log("itarated")
-                if(passedOver){window.location = "../contato-recebido"}
-                else setTimeout(function (){iterate()},200)
-            }
-            iterate()
-        })
+        .then(() => window.location = "../contato-recebido")
         .catch(error => alert("Opa! Houve algum problema ao enviar o número."));
 };
+
 
 document.querySelector("form").addEventListener("submit", handleSubmit);
