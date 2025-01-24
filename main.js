@@ -193,7 +193,7 @@ function openMenu(op){
 var form = document.getElementById("form");
 
 async function handleSubmit(event) {
-    window.location = "../contato-recebido"}
+    window.location = "../contato-recebido"
 }
 
 
