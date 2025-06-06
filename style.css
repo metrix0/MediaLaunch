@@ -9,6 +9,7 @@
     --red: #dc2d28;
     --green: #60be7c;
     --normalBG: white;
+    --bgr: white
 }
 :root{
     --main: black;
@@ -183,12 +184,12 @@ button{all: unset}
     .text1{margin-left: 0% !important; text-align: center!important; padding-top: 8%}
     .text2{position: relative!important; margin-top: 25%; margin-bottom: 15%; width: 90% !important; margin-left: 5% !important}
     .img1{width: 200% !important; left: -50% !important}
-    .text3{width: 90% !important; margin-left: 5% !important; font-size: 52% !important}
+    .text3{width: 90% !important; margin-left: 2.5% !important; font-size: 52% !important}
     .cont2{padding-top: 15% !important}
     #testimoinalGrid{grid-template-columns: 100% !important;}
     #testimoinalGrid div{box-shadow:  0px 6px 7px hsl(0deg 0% 0% / 0.2)!important;}
     .text4{width: 80% !important;font-size: 140%!important; line-height: 150% !important; margin-top: 15% !important; margin-bottom: 5% !important}
-    #nos{margin-top: 60% !important; width: 80% !important; margin-left: 10% !important}
+    #nos{margin-top: 300% !important; width: 80% !important; margin-left: 10% !important}
     .img2{width: 100% !important; margin-left: 0 !important}
 
     .cont3{height: 40svh!important;}

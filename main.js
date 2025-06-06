@@ -93,22 +93,53 @@ function passOver(){
 
 const testimonials = [
     {
-        "name":"Orc",
-        "imgpath":"orc.jpg",
-        "result":"+146 LEADS EM 1 MÊS",
-        "desc": "Lançamento de novos produtos com sucesso."
+        "name":"Pizzaria Amorim",
+        "imgpath":"amorim.jpg",
+        "result":"+120 PEDIDOS no 1° mês",
+        "desc": "Sucesso nas vendas em Delivery do Cardápio Digital."
+    },
+
+    {
+        "name":"D'Baked",
+        "imgpath":"dbaked.jpg",
+        "result":"+200 PEDIDOS no 1° mês",
+        "desc": "Além do lançamento surpreendente dos produtos de Páscoa."
     },
     {
-        "name":"Total Ar",
-        "imgpath":"totalar.jpg",
-        "result":"+ RECONHECIMENTO",
-        "desc": "Com a TotalAr alcançamos mais consumidores e empreendimentos!"
+        "name":"Florença",
+        "imgpath":"florenca.jpg",
+        "result":"+700 CONTATOS no Whatsapp",
+        "desc": "Apoio à nova fase da Padaria e Confeitaria, cardápios e delivery."
+    },
+    {
+        "name":"Four Hamburgueria",
+        "imgpath":"four.jpg",
+        "result":"+100 MIL visualizações.",
+        "desc": "Com uma produção visual de dar água na boca!"
+    },
+    {
+        "name":"Saboritto",
+        "imgpath":"saboritto2.jpg",
+        "result":"+400 CONTATOS no Whatsapp",
+        "desc": "E lançamento das vertentes Almoço e Café da Manhã."
+    },
+    // {
+    //     "name":"Três Chefs",
+    //     "imgpath":"treschefs.jpg",
+    //     "result":"+146 LEADS EM 1 MÊS",
+    //     "desc": "Lançamento de novos produtos com sucesso."
+    // },
+    {
+        "name":"Orc Burger",
+        "imgpath":"orc.jpg",
+        "result":"+50 MIL ENGAJAMENTOS",
+        "desc": "E lançamento de novos produtos com sucesso."
     },
     {
         "name":"Germânia",
         "imgpath":"germania.jpg",
-        "result":"+ RECONHECIMENTO",
-        "desc": "A Germânia de Rio Claro precisava de mais alcance."
+        "result":"+100 LEADS no mês",
+        "desc": "Mais alcance e reconhecimento da marca, em B2B e B2C."
     },
     {
         "name":"Cowbrownies",
@@ -116,36 +147,12 @@ const testimonials = [
         "result":"+ VENDAS/MÊS",
         "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
     },
-    // {
-    //     "name":"Metal Móveis",
-    //     "imgpath":"metal.png",
-    //     "result":"+1000 VENDAS/MÊS",
-    //     "desc": "Cowbrownies precisava de um visual belo e que dá muita fome!"
-    // },
-    {
-        "name":"Casulo Veste",
-        "imgpath":"casulo.jpg",
-        "result":"LANÇAMENTO DO ZERO",
-        "desc": "Lançamento da Loja com múltiplos clientes ativos!"
-    },
-    {
-        "name":"Baliero",
-        "imgpath":"baliero.jpg",
-        "result":"+ RENOME E TRÁFEGO",
-        "desc": "Combinamos nossa criatividade com suas fotos incríveis."
-    },
     {
         "name":"Lugs",
         "imgpath":"lugs.jpg",
-        "result":"+ RECONHECIMENTO",
+        "result":"+100 MIL visualizações",
         "desc": "A Lug's precisava de reconhecimento, através da internet e influencers!"
-    },
-    {
-        "name":"John Vitor",
-        "imgpath":"johnvitor.jpg",
-        "result":"LEADS QUALIFICADOS",
-        "desc": "Entregamos um visual profissional que atrai o tipo certo de cliente."
-    },
+    }
 ]
 const testimonialsUl = document.getElementById('testimoinalGrid')
 var shadowIndex = 1
@@ -198,6 +205,10 @@ const handleSubmit = event => {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    if(document.getElementById("telInput").value.length < 8){
+        alert("Opa! Houve algum problema ao enviar o número.");
+        return 0;
+    }
 
     fetch("/", {
         method: "POST",
