@@ -196,7 +196,9 @@ button{all: unset}
     .vimeo{scale: 100% !important; margin-top: -14% !important; width: 160% !important; margin-left: -30% !important; height: auto!important;}
     .vid1{margin-top: 0% !important}
     .error1{top: 10% !important;}
-
+    #contato{height: 75vh !important}
+    .converse-com{font-size: 200% !important}
+    .seuTel{margin-left: -2% !important}
 
 }
 
@@ -207,7 +209,10 @@ button{all: unset}
     .error1{top: 0% !important;}
     .img1{width: 180% !important; left: -40% !important; margin-top: -1% !important}
     .vimeo{margin-top: -14% !important; width: 120% !important; margin-left: -10% !important; height: auto!important;}
-
+    .converse-com{font-size: 380% !important}
+    .seuTel{margin-left: -2% !important}
+    .fontInc3{font-size: 150% !important}
+    #contato{height: 80% !important}
 }
 
 

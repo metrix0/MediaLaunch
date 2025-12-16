@@ -95,14 +95,14 @@ const testimonials = [
     {
         "name":"Pizzaria Amorim",
         "imgpath":"amorim.jpg",
-        "result":"+120 PEDIDOS no 1° mês",
+        "result":"+150 PEDIDOS no 1° mês",
         "desc": "Sucesso nas vendas em Delivery do Cardápio Digital."
     },
 
     {
         "name":"D'Baked",
         "imgpath":"dbaked.jpg",
-        "result":"+200 PEDIDOS no 1° mês",
+        "result":"+300 PEDIDOS no 1° mês",
         "desc": "Além do lançamento surpreendente dos produtos de Páscoa."
     },
     {
