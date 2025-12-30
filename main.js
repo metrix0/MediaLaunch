@@ -87,7 +87,7 @@ const testimonials = [
         result:"+154 pedidos gerados no 1° mês",
         desc:"Sucesso nas vendas em Delivery do Cardápio Digital.",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/amo1.mp4" },
             { type:"img", src:"img/resultados/amo2.webp" },
             { type:"video", src:"img/resultados/amo3.mp4" },
@@ -101,7 +101,7 @@ const testimonials = [
         "result":"+300 pedidos gerados no 1° mês",
         "desc": "Além do lançamento surpreendente dos produtos de Páscoa.",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/db2.mp4" },
             { type:"img", src:"img/resultados/db3.webp" },
             { type:"video", src:"img/resultados/db4.mp4" },
@@ -116,7 +116,7 @@ const testimonials = [
         "result":"+100.000 visualizações no 1° Mês.",
         "desc": "Com uma produção visual de dar água na boca!",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/fou1.mp4" },
             { type:"img", src:"img/resultados/fou2.webp" },
             { type:"video", src:"img/resultados/fou3.mp4" },
@@ -129,7 +129,7 @@ const testimonials = [
         "result":"+400 Contatos no Whatsapp no 1° Mês",
         "desc": "E lançamento das vertentes Almoço e Café da Manhã.",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/sab2.mp4" },
             { type:"img", src:"img/resultados/sab1.webp" },
             { type:"video", src:"img/resultados/sab4.mp4" },
@@ -143,7 +143,7 @@ const testimonials = [
         "result":"+50.000 Engajamentos (Like, Follow, etc)",
         "desc": "E lançamento de novos produtos com sucesso.",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/orc2.mp4" },
             { type:"img", src:"img/resultados/orc1.webp" },
             { type:"video", src:"img/resultados/orc4.mp4" },
@@ -157,7 +157,7 @@ const testimonials = [
         "result":"+700 contatos no Whatsapp",
         "desc": "Apoio à nova fase da Padaria e Confeitaria, cardápios e delivery.",
         extended:true,
-        ads:[
+        results:[
             { type:"video", src:"img/resultados/flo1.mp4" },
             { type:"img", src:"img/resultados/flo2.webp" },
             { type:"video", src:"img/resultados/flo3.mp4" },
@@ -211,7 +211,7 @@ function testimoialsInsert(){
             if(shadowIndex++ >= 3){ shadowIndex = 1 }
 
             const right = document.createElement('div')
-            right.classList.add('adsGrid')
+            right.classList.add('resultsGrid')
 
             right.innerHTML =
                 '<div style="grid-column:1/-1;margin-bottom:14px;" class="divGridtext">' +
@@ -220,7 +220,7 @@ function testimoialsInsert(){
                 '</div>'
 
             let j = 0
-            testimonials[i].ads.forEach(a=>{
+            testimonials[i].results.forEach(a=>{
                 j++
                 const ad = document.createElement('div')
                 ad.classList.add('adItem')

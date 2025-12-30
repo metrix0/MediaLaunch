@@ -61,7 +61,7 @@ a{all: unset; cursor: pointer;}
 button{all: unset}
 
 
-.adsGrid {
+.resultsGrid {
     width: 86%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -85,14 +85,14 @@ button{all: unset}
 
 /* Tablet */
 @media (min-width: 768px) {
-    .adsGrid {
+    .resultsGrid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
-    .adsGrid {
+    .resultsGrid {
         width: 72%;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -343,7 +343,7 @@ button{all: unset}
 }
 
 /* ADS GRID */
-.adsGrid{
+.resultsGrid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
@@ -370,7 +370,7 @@ button{all: unset}
 
 /* TABLET */
 @media (min-width: 768px){
-    .adsGrid{
+    .resultsGrid{
         grid-template-columns: repeat(3,1fr);
     }
 
@@ -378,7 +378,7 @@ button{all: unset}
 
 /* DESKTOP */
 @media (min-width: 1200px){
-    .adsGrid{
+    .resultsGrid{
         grid-template-columns: repeat(4,1fr);
     }
 }
@@ -408,7 +408,7 @@ button{all: unset}
         max-width: 94%;
     }
 
-    .adsGrid{
+    .resultsGrid{
         order: 2;
         grid-template-columns: repeat(2,1fr);
         width: 100%;
@@ -419,7 +419,7 @@ button{all: unset}
 
     #testimoinalGrid{gap: 40px !important; margin-top: 60px !important}
 
-    .adsGrid{gap: 12px; border-bottom: 1px solid #d4d5d9; padding-bottom: 14%;
+    .resultsGrid{gap: 12px; border-bottom: 1px solid #d4d5d9; padding-bottom: 14%;
 
     }
     .gradText{font-size: 120% !important;  text-align: center; width: 116% !important; display: inline-block; margin-left: -8%}
