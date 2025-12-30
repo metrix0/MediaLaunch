@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -33,7 +34,6 @@
   <meta property="og:url" content="https://medialaunch.com.br">
   <meta name="keywords" content="social media, instagram, marketing, rio claro, leads, vendas, online, rede social">
   <meta name="subject" content="Aumente suas vendas e lucro por cliente com nossos serviços de Mídias Digitais. Obtenha métricas e relatórios.">
-  <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -62,7 +62,7 @@
     <a href="#sobre" onclick="openMenu(false)">O que Fazemos</a><br>
     <a href="#resultados" onclick="openMenu(false)">Resultados</a><br>
     <a href="#nos" onclick="openMenu(false)">Quem Somos</a><br>
-    <span onclick="window.location('#contato'); openMenu(false)" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</span><br>
+    <a href="#contato" onclick="openMenu(false)" style="white-space: nowrap;cursor: pointer;font-size: 80%; padding: 10px 20px 10px 20px; background: white; border-radius: 90px; color: var(--stealth2)">Vamos Conversar</a><br>
   </p>
   </p>
 </div>
@@ -100,26 +100,38 @@
     </div>
   </div>
 </div>
-<div class="phoneFit cont1" style="height: 105svh">
+<div class="phoneFit cont1" style="height: 105svh; padding-bottom: 3%">
   <div id="passOver" class="none_important" style="transition: .5s;width: 100%; height: 100%; position: fixed; left: -100%; top: 0;display: inline-block;    background: linear-gradient(90deg, var(--grad1) 0%, var(--grad2) 50%, var(--grad3) 100%);; z-index: 99">
 
   </div>
-  <div id="contato" style="height: 100%; display: flex; width: 100%; align-items: center;  justify-content: center;">
+  <div id="contato" style="height: 100%;; display: flex; width: 100%; align-items: center;  justify-content: center;">
     <form action="../contato-recebido" id="form" name="contato" netlify method="POST" class="phone90" style="margin-left: 0!important;width: 40%;margin-top: 0%; text-align: center; position: relative">
-      <span id="arrows">
-        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -10%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
+        <span id="arrows">
+        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 1s;font-size: 480%;left: -15%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
         <i class="fa-solid fa-arrow-right flying" style="top: -20%;right: 0; font-size: 350%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
-        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 2s;left: 80%;bottom: -15%;font-size: 550%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
+        <i class="fa-solid fa-arrow-right flying" style="animation-delay: 2s;left: 80%;bottom: -25%;font-size: 550%; position: absolute; z-index: 1; transform: scaleX(110%); color: var(--select2)"></i>
       </span>
-      <span style="font-size: 320%; position: relative;z-index: 3;display: inline-block" class="cand gradText hidden converse-com">CONVERSE COM <keep>A GENTE</keep></span>
-        <span style="position: relative;z-index: 3;display: inline-block; margin-top: 5%" class="gradText hidden  fontInc3">Mais de <b>1 MILHÃO R$ POR MÊS</b> assessorados em restaurantes.</span>
-        <span style="z-index: 3;position: relative;font-size: 100%;margin-top: 10%;display: inline-block" class="font2"><br>
-         <span class="hidden fontInc3 seuTel" style="width: 130%; display: inline-block; margin-left: -10%"><b>SEU TELEFONE:</b> <input id="telInput" name="tel" type="tel" autocomplete="tel" placeholder="ㅤㅤㅤㅤㅤㅤㅤㅤ" style="text-decoration: underline; text-decoration-color:gray;font-size: 120%; text-align: left; margin-left: 2%"></span>
+        <span style="font-size: 320%; position: relative;z-index: 3;display: inline-block" class="cand gradText hidden converse-com"><keep>FALE COM</keep> <keep>A GENTE</keep></span>
+        <span style="position: relative;z-index: 3;display: inline-block; margin-top: 5%" class="gradText hidden fontInc3">Mais de <b>1 MILHÃO R$ POR MÊS</b> assessorados em restaurantes.</span>
+        <span style="z-index: 3;position: relative;font-size: 100%;margin-top: 5%;display: inline-block" class="font2 div99"><br>
+         <span class="hidden seuTel" style=";width: 100%; display: flex; flex-direction: column; text-align: left; ">
+             <p style="margin-bottom: 4%"><b>SEU CELULAR:</b></p>
+             <input class="fontInc3" id="telInput" name="tel" type="tel" autocomplete="tel" placeholder="(12) 3456-7891" style="min-width: 290px;font-size: 90%; text-align: left; background-color: #e8e8ed; padding: 7px; padding-left: 16px;padding-right: 16px; border-radius: 999px">
+         <span id="telError"
+                       style="display:none; color:#e53935; font-size:80%; margin-top:6px;">
+          Número inválido. Verifique e tente novamente.
+        </span>
+         </span>
+
           <br>
-          <button id="formbutton" type="submit" class="hidden fontInc3" style="margin-top: 15px;display: inline-block;cursor: pointer; padding: 20px" onmouseover="shiver(true)" onmouseleave="shiver(false)" target="_blank">
-            SOLICITAR CONTATO
-            <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right error1" style="position: absolute; bottom: 0; top: 15%; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
-          </button>
+            <div style="width: 100%; display: flex; justify-content: center; align-items: center;" class="buttonGo">
+              <button id="formbutton" type="submit" class="hidden fontInc1" style=" gap: 8px;margin-top: 15px;display: flex; align-items: center; justify-content: center;cursor: pointer; padding: 14px; padding-top: 10px; padding-bottom: 10px;;border: 1px solid gray; border-radius: 999px; font-size: 90%" onmouseover="shiver(true)" onmouseleave="shiver(false)" target="_blank">
+SOLICITAR CONTATO
+<span class="arrowCircle" style="; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;; position: relative; justify-content: center; align-items: center; display: flex">
+    <i class="fa-solid fa-arrow-right error1" style=" height: fit-content; width: fit-content"></i>
+</span>
+</button>
+            </div>
 
 
       </span>
@@ -135,24 +147,24 @@
   </div>
   <div class="unfloat95" style="width: 30%;margin-left: 9%; margin-top: 1.8%;float: left; display: flex; justify-content: center; align-items: center; height: 100%">
     <p class="text1" style="margin-left: -3%;color: white; font-weight: 400;margin-top: 5%">
-      <span class="cand hidden" style="font-size: 130%; display: inline-block">+<span style="transform: scaleY(1.3) translateY(-5%); display: inline-block">10%</span> DE FATURAMENTO POR MÊS</span>
+      <span class="cand hidden" style="font-size: 130%; display: inline-block">R$ 15.000 A CADA R$ 1.000</span>
       <br>
-      <span style="font-size: 90%; display: inline-block" class="hidden">Em média, nossos clientes crescem seu faturamento em 10% ao mês, por 6 meses.</span>
+      <span style="font-size: 90%;margin-top: 1%; display: inline-block" class="hidden">A cada mil reais investidos em anúncios, em média, retornamos R$ 15.000 no seu faturamento.</span>
       <br><br><br>
 
-      <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-eye"></i> <span style="transform: scaleY(1.3) translateY(-5%); display: inline-block">10M</span>+ DE VISUALIZAÇÕES</span>
+      <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-plus"></i> MAIS DE R$ 1.000.000/MÊS</span>
       <br>
-      <span style="font-size: 90%; display: inline-block" class="hidden">Reconhecimento da marca através de Tráfego Pago, Redes Sociais, Captação e Pós-produção.<br></span>
+      <span style="font-size: 90%;margin-top: 1%; display: inline-block" class="hidden">Equipe que já assessorou mais de 1 milhão de reais por mês em restaurantes.<br></span>
 
       <br><br><br>
-      <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-rocket"></i> HORA DE CRESCER</span>
+      <span class="cand hidden" style="font-size: 120%; display: inline-block"><i class="fa-solid fa-rocket"></i> SEU DINHEIRO DE VOLTA</span>
       <br>
-      <span style="font-size: 90%; display: inline-block" class="hidden">Cresça seu restaurante com nossa estratégia comprovada em mais de 50 cases.
+      <span style="font-size: 90%;margin-top: 1%; display: inline-block" class="hidden">Tome decisões seguras com nossas garantias.
       </span>
     </p>
   </div>
   <p class="text2" style="color: black; position: absolute; bottom: 6.5%; width: 100%; text-align: center; opacity: 50%">
-    CERTIFICADOS PELO <i class="fa-brands fa-google"></i> GOOGLE ADS e <i class="fa-brands fa-meta"></i> META ADS <span style="font-size: 65%">INSTAGRAM/FACEBOOK</span>
+    CERTIFICADOS PELO <i class="fa-brands fa-google"></i> GOOGLE ADS e <i class="fa-brands fa-meta"></i> META ADS
   </p>
   <p style="z-index: 1;color: black; opacity: 27%;position: absolute; text-align: center; top: 0;width: 50%;display: flex; justify-content: center; align-items: center; height: 100%; display: none" class="can">
     <span style="font-size: 480%;margin-top: -3%; width: 100%">
@@ -163,15 +175,17 @@
 <div id="resultados" style="height: fit-content">
   <p style="width: 100%; margin-top: 6%; text-align: center">
 
-    <span style="line-height: 200%;font-size: 150%; position: relative;z-index: 3;display: inline-block" class="text4 cand gradText hidden">
-          <span style="; font-size: 120%">+10% DE FATURAMENTO POR MÊS <span style="font-size: 66%; font-family: 'Poppins', sans-serif">durante 6 meses, em média.</span>
-      <br>
-      </span>
-      <br class="pcbye">50+ CLIENTES <span style="font-size: 66%; font-family: 'Poppins', sans-serif">cresceram conosco.</span>
+    <p style="width: 100%; text-align: center; margin-bottom: 5%">
+    <span class="cand gradText hidden text5" style="font-size: 220%; display: inline-block">
+      CLIENTES
+    </span><br>
+        <span class="hidden text6" style="font-size: 95%; opacity: .7; display: inline-block; margin-top: 1%">
+      Veja com que trabalhamos e nossos resultados.
     </span>
+    </p>
   </p>
-  <div style="margin-top: 5%; width: 75%; margin-left: 12.5%;">
-    <div id="testimoinalGrid" style="display: grid; gap: 3%; width: 100%;; grid-template-columns: 33% 33% 33%;">
+    <div style="margin-top: 5%; width: 75%; margin-left: 12.5%;">
+    <div id="testimoinalGrid" style="display: grid;row-gap: 50px; column-gap: 3%; width: 100%;; grid-template-columns: 33% 33% 33%;">
       <div>
 
       </div>
@@ -180,23 +194,35 @@
       </div>
     </div>
   </div>
-  <div id="nos" style="width: 60%;margin-left: 20%;position: relative;margin-top: 20%;margin-bottom: 10%; display: inline-block;">
-    <img src="img/logo.png" style="width: 50%;margin-left: 25%" class="hidden img2">
+
+
+    <div id="nos" style="display: flex;width: 60%;margin-left: 20%;position: relative;margin-top: 10%;margin-bottom: 10%; align-items: center; justify-content: center; flex-direction: column; gap:82px">
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center;" class="buttonGo">
+            <a  type="submit" class="hidden fontInc1" style=" gap: 8px;margin-top: 15px;display: flex; align-items: center; justify-content: center;cursor: pointer; padding: 14px; padding-top: 10px; padding-bottom: 10px;;border: 1px solid gray; border-radius: 999px; font-size: 90%" href="#contato">
+                SOLICITAR CONTATO
+                <span class="arrowCircle" style="; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;; position: relative; justify-content: center; align-items: center; display: flex">
+    <i class="fa-solid fa-arrow-right error1" style=" height: fit-content; width: fit-content"></i>
+</span>
+            </a>
+        </div>
+        <img src="img/logo.png" style="width: 50%;" class="hidden img2">
     <span style="text-align: center;width: 100%;;z-index: 3;position: relative;font-size: 100%;margin-top: 0%;display: inline-block" class="font2"><br>
-      <a class="hidden fontInc1" style="display: inline-block;cursor: pointer; padding: 20px" href="#contato" target="_blank">
-        ENTRE EM CONTATO
-        <span class="arrowCircle" style="display: inline-block; height: 20px; width: 20px; border-radius: 100%; border: 1px solid black;transform: translateY(20%) translateX(15%); position: relative"><i class="fa-solid fa-arrow-right" style="position: absolute; bottom: 0; top: 0; left: 0; right: 0; margin: auto; height: fit-content; width: fit-content"></i></span>
-      </a>
+
         <br>
+        <!--
         <span style="text-align: left; display: inline-block;margin-top: 3%" class="fontInc1">
         <i class="fa-brands fa-instagram" style="font-size: 300%;margin-right: 8%; transform: translateY(20%)"></i> @medialaunch.com.br
         <br><br>
-        <keep><i class="fa-regular fa-envelope" style="font-size: 250%;margin-right: 8%; transform: translateY(20%)"></i> contato@medialaunch.com.br</keep>
+        <keep><i class="fa-regular fa-envelope" style="font-size: 250%;margin-right: 8%; transform: translateY(20%)"></i> contato@medialaunch.com.br</keep>-->
       </span>
         </span>
     </span>
   </div>
 </div>
+
+
+
+
 
 <footer style="background: white;padding-bottom: 87px;padding-top: 47px; margin-top: -1px;text-align: center">
   <p style="float: left;width: 100%; color: var(--stealth1);font-weight: 700;letter-spacing: 4px; text-align: center; cursor: default;"  class="footerSmall syne pcbye"><a style="padding-right: 10px; padding-left: 10px; cursor: pointer;font-size: 130%" target="_blank" href="https://johnvitor.com">WEBSITE BY JOHN VITOR</a></span></p>

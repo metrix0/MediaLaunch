@@ -61,6 +61,42 @@ a{all: unset; cursor: pointer;}
 button{all: unset}
 
 
+.adsGrid {
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.adItem {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f2f2f2;
+    position: relative;
+}
+
+.adItem img,
+.adItem video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .adsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .adsGrid {
+        width: 72%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 
 
@@ -85,6 +121,8 @@ button{all: unset}
 
     .phone90{width: 90% !important; margin-left: 5% !important}
     .unfloat95{width: 95% !important; margin-left: 2.5% !important; float: none!important; display: inline-block!important;}
+    #video{width: 120% !important; margin-left: -10% !important}
+    .vid1{height: 120% !important; padding-bottom: 0% !important}
 
 }
 
@@ -93,6 +131,7 @@ button{all: unset}
     .balls div{width: 12px; height: 12px}
     footer{padding-bottom: 200px!important;}
     .footerTerms{font-size: 100% !important}
+
 }
 
 /* ANIMATIONS */
@@ -164,7 +203,7 @@ button{all: unset}
     font-weight: 500 !important;
 }
 .gridElement{
-    display: inline-grid; height: fit-content; padding-bottom: 0%; padding-top: 0%; border: 0px solid var(--grad2); border-radius: 4px;
+    display: inline-grid; height: fit-content; padding-bottom: 0%; padding-top: 0%; border: 0px solid var(--grad2); border-radius: 10px;
 }
 .shadow1{
     box-shadow: -5px 6px 7px hsl(0deg 0% 0% / 0.2);
@@ -180,39 +219,43 @@ button{all: unset}
 
 @media screen and (max-width: 1000px) {
 
-    .cont1{width: 100% !important;; text-align: center!important;; margin-top: 17svh !important;margin-bottom: 27svh; display: inline-block!important;}
+    .cont1{padding-bottom: 0% !important;width: 100% !important;; text-align: center!important;;margin-bottom: 27svh; display: inline-block!important;}
     .text1{margin-left: 0% !important; text-align: center!important; padding-top: 8%}
-    .text2{position: relative!important; margin-top: 25%; margin-bottom: 15%; width: 90% !important; margin-left: 5% !important}
+    .text2{font-size: 90% !important;position: relative!important; margin-top: 25%; margin-bottom: 15%; width: 90% !important; margin-left: 5% !important}
     .img1{width: 200% !important; left: -50% !important}
-    .text3{width: 90% !important; margin-left: 2.5% !important; font-size: 52% !important}
+    .text3{width: 90% !important; margin-left: 5% !important; margin-top: -2% !important ;font-size: 52% !important}
     .cont2{padding-top: 15% !important}
     #testimoinalGrid{grid-template-columns: 100% !important;}
-    #testimoinalGrid div{box-shadow:  0px 6px 7px hsl(0deg 0% 0% / 0.2)!important;}
-    .text4{width: 80% !important;font-size: 140%!important; line-height: 150% !important; margin-top: 15% !important; margin-bottom: 5% !important}
-    #nos{margin-top: 300% !important; width: 80% !important; margin-left: 10% !important}
+    .text4{width: 80% !important;font-size: 140%!important; line-height: 120% !important; margin-top: 15% !important; margin-bottom: 5% !important}
+    #nos{margin-top: 30% !important; width: 80% !important; margin-left: 10% !important}
     .img2{width: 100% !important; margin-left: 0 !important}
 
-    .cont3{height: 40svh!important;}
+    .cont3{height: 41svh!important;}
     .vimeo{scale: 100% !important; margin-top: -14% !important; width: 160% !important; margin-left: -30% !important; height: auto!important;}
     .vid1{margin-top: 0% !important}
     .error1{top: 10% !important;}
-    #contato{height: 75vh !important}
-    .converse-com{font-size: 200% !important}
-    .seuTel{margin-left: -2% !important}
+    #contato{height: 75vh !important; margin-top: 10% !important}
+    #telInput{min-width: unset!important; }
+    .converse-com{font-size: 12vw !important}
+    .buttonGo{ margin-top: 0px; }
+    #formbutton{padding-top: 9px!important; padding-bottom: 9px!important;}
+    .div99{margin-top: 10% !important}
 
 }
 
 
 @media screen and (min-width: 1400px){
-    .arrowCircle{width: 35px !important; height: 35px!important; transform: translateY(25%) translateX(15%) !important}
+    .arrowCircle{width: 35px !important; height: 35px!important;}
     .fontInc1{font-size: 125% !important}
     .error1{top: 0% !important;}
     .img1{width: 180% !important; left: -40% !important; margin-top: -1% !important}
     .vimeo{margin-top: -14% !important; width: 120% !important; margin-left: -10% !important; height: auto!important;}
     .converse-com{font-size: 380% !important}
-    .seuTel{margin-left: -2% !important}
     .fontInc3{font-size: 150% !important}
     #contato{height: 80% !important}
+    .fa-arrow-right{scale: 1.3 !important}
+    .fontInc2{font-size: 120% !important}
+    .fontInc4{font-size: 160% !important}
 }
 
 
@@ -283,3 +326,107 @@ button{all: unset}
 }
 
 
+
+/* EXTENDED TESTIMONIAL LAYOUT */
+.extendedWrap{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 6%;
+    align-items: start;
+}
+
+.extendedLeft{
+    width: 100%;
+}
+.extendedLeft .gridElement{
+}
+
+/* ADS GRID */
+.adsGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.adItem{
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f2f2f2;
+    aspect-ratio: 3 / 5;
+
+}
+
+.adItem img,
+.adItem video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* TABLET */
+@media (min-width: 768px){
+    .adsGrid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1200px){
+    .adsGrid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 1000px){
+    .extendedWrap{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .extendedWrap{
+        grid-template-columns: 100%;
+        gap: 24px;
+
+    }
+
+    .extendedLeft{
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .extendedLeft .gridElement{
+        max-width: 94%;
+    }
+
+    .adsGrid{
+        order: 2;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    .adItem{
+    }
+
+    #testimoinalGrid{gap: 40px !important; margin-top: 60px !important}
+
+    .adsGrid{gap: 12px; border-bottom: 1px solid #d4d5d9; padding-bottom: 14%;
+
+    }
+    .gradText{font-size: 120% !important;  text-align: center; width: 116% !important; display: inline-block; margin-left: -8%}
+    .divGridtext{ text-align: center}
+    .text5{font-size: 10vw !important; margin-top: 10%}
+    .text6{font-size: 80% !important}
+    .converse-com{font-size: 10vw !important}
+    #telInput{font-size: 100% !important}
+
+}
