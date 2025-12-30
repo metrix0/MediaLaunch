@@ -428,5 +428,9 @@ button{all: unset}
     .text6{font-size: 80% !important}
     .converse-com{font-size: 10vw !important}
     #telInput{font-size: 100% !important}
+    .logobar{width: 60% !important; margin-top: 2% !important}
+    .contphone{height: unset!important;}
+    .vidphone{height: unset!important;}
+    .phonegb{display: none}
 
 }
