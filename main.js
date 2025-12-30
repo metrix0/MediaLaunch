@@ -88,10 +88,10 @@ const testimonials = [
         desc:"Sucesso nas vendas em Delivery do Cardápio Digital.",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/amo1.mp4" },
-            { type:"img", src:"img/ads/amo2.webp" },
-            { type:"video", src:"img/ads/amo3.mp4" },
-            { type:"img", src:"img/ads/amo4.webp" }
+            { type:"video", src:"img/resultados/amo1.mp4" },
+            { type:"img", src:"img/resultados/amo2.webp" },
+            { type:"video", src:"img/resultados/amo3.mp4" },
+            { type:"img", src:"img/resultados/amo4.webp" }
         ]
     },
 
@@ -102,10 +102,10 @@ const testimonials = [
         "desc": "Além do lançamento surpreendente dos produtos de Páscoa.",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/db2.mp4" },
-            { type:"img", src:"img/ads/db3.webp" },
-            { type:"video", src:"img/ads/db4.mp4" },
-            { type:"img", src:"img/ads/db1.webp" }
+            { type:"video", src:"img/resultados/db2.mp4" },
+            { type:"img", src:"img/resultados/db3.webp" },
+            { type:"video", src:"img/resultados/db4.mp4" },
+            { type:"img", src:"img/resultados/db1.webp" }
 
         ]
 
@@ -117,10 +117,10 @@ const testimonials = [
         "desc": "Com uma produção visual de dar água na boca!",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/fou1.mp4" },
-            { type:"img", src:"img/ads/fou2.webp" },
-            { type:"video", src:"img/ads/fou3.mp4" },
-            { type:"img", src:"img/ads/fou4.webp" },
+            { type:"video", src:"img/resultados/fou1.mp4" },
+            { type:"img", src:"img/resultados/fou2.webp" },
+            { type:"video", src:"img/resultados/fou3.mp4" },
+            { type:"img", src:"img/resultados/fou4.webp" },
         ]
     },
     {
@@ -130,10 +130,10 @@ const testimonials = [
         "desc": "E lançamento das vertentes Almoço e Café da Manhã.",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/sab2.mp4" },
-            { type:"img", src:"img/ads/sab1.webp" },
-            { type:"video", src:"img/ads/sab4.mp4" },
-            { type:"img", src:"img/ads/sab3.webp" }
+            { type:"video", src:"img/resultados/sab2.mp4" },
+            { type:"img", src:"img/resultados/sab1.webp" },
+            { type:"video", src:"img/resultados/sab4.mp4" },
+            { type:"img", src:"img/resultados/sab3.webp" }
 
         ]
     },
@@ -144,10 +144,10 @@ const testimonials = [
         "desc": "E lançamento de novos produtos com sucesso.",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/orc2.mp4" },
-            { type:"img", src:"img/ads/orc1.webp" },
-            { type:"video", src:"img/ads/orc4.mp4" },
-            { type:"img", src:"img/ads/orc3.webp" }
+            { type:"video", src:"img/resultados/orc2.mp4" },
+            { type:"img", src:"img/resultados/orc1.webp" },
+            { type:"video", src:"img/resultados/orc4.mp4" },
+            { type:"img", src:"img/resultados/orc3.webp" }
 
         ]
     },
@@ -158,10 +158,10 @@ const testimonials = [
         "desc": "Apoio à nova fase da Padaria e Confeitaria, cardápios e delivery.",
         extended:true,
         ads:[
-            { type:"video", src:"img/ads/flo1.mp4" },
-            { type:"img", src:"img/ads/flo2.webp" },
-            { type:"video", src:"img/ads/flo3.mp4" },
-            { type:"img", src:"img/ads/flo4.webp" }
+            { type:"video", src:"img/resultados/flo1.mp4" },
+            { type:"img", src:"img/resultados/flo2.webp" },
+            { type:"video", src:"img/resultados/flo3.mp4" },
+            { type:"img", src:"img/resultados/flo4.webp" }
         ]
     },
 
