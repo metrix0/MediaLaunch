@@ -431,6 +431,6 @@ button{all: unset}
     .logobar{width: 60% !important; margin-top: 2% !important}
     .contphone{height: unset!important;}
     .vidphone{height: unset!important;}
-    .phonegb{display: none}
+    .phonegb{display: none!important;}
 
 }
