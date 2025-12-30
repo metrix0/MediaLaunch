@@ -222,13 +222,13 @@ function testimoialsInsert(){
             let j = 0
             testimonials[i].results.forEach(a=>{
                 j++
-                const ad = document.createElement('div')
-                ad.classList.add('adItem')
-                ad.innerHTML = a.type === 'video'
+                const res = document.createElement('div')
+                res.classList.add('resItem')
+                res.innerHTML = a.type === 'video'
                     ? '<video src="'+a.src+'" muted autoplay loop playsinline class="lazy-video"></video>'
                     : '<img src="'+a.src+'" class="lazy">'
-                if(j > 3)ad.classList.add("pcbye")
-                right.appendChild(ad)
+                if(j > 3)res.classList.add("pcbye")
+                right.appendChild(res)
             })
 
             wrap.appendChild(left)
