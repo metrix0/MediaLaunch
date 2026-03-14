@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cowbrownies</title>
+
+  <!-- Instant redirect -->
+  <meta http-equiv="refresh" content="0; url=https://wa.me/11996984002">
+
+  <!-- Fallback redirect with JavaScript -->
+  <script>
+    window.location.href = "https://wa.me/11996984002";
+  </script>
+</head>
+<body>
+  <p>Caso você não seja redirecionado automaticamente, 
+     <a href="https://wa.me/11996984002">clique aqui</a>.
+  </p>
+</body>
+</html>
